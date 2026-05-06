@@ -16,7 +16,7 @@ function generatePoem(event) {
   let apiKey = "a0bdfcad3964e6e3300b74o509fbat1b";
   let prompt = `instructions:Generate a spanish poem about ${instructionsInput.value}`;
   let context =
-    "You are a modern poet expert and like to write shorts and original poems, your goal is to write a 3 line poem inbasic HTML. Make sure to follow the instructions";
+    "You are a modern poet expert and like to write shorts and original poems, your goal is to write a 3 line poem in basic HTML. Make sure to follow the instructions and output html only without code blocks or delimiters";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating poem...");
